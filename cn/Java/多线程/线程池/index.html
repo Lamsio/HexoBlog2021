@@ -139,10 +139,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="https://notes.fishcode.org.cn/tags/IO-流/">
+  <link rel="canonical" href="https://notes.fishcode.org.cn/cn/Java/多线程/线程池/">
   <title>
     
-      either thin | or die
+      线程池 - either thin | or die
     
   </title>
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -348,19 +348,19 @@
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('/img/header_img/lml_bg.jpg');
-      --intro-header-background-image-url-post: url('');
-      --intro-header-background-image-url-page: url('/img/header_img/archive_bg2.jpg');
+      --intro-header-background-image-url-post: url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: url('//img/header_img/lml_bg.jpg');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/lml_bg.jpg');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/archive_bg2.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/lml_bg.jpg');
     }
 
     header.intro-header {
-       /*page*/
-        background-image: var(--intro-header-background-image-url-page);
-        /* background-image: url('/img/header_img/archive_bg2.jpg'); */
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('/img/header_img/lml_bg.jpg'); */
       
     }
 
@@ -382,10 +382,44 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>咸鱼博客</h1>
-            <!--<hr class="small">-->
-            <span class="subheading">一切伟大的行动和思想，都有一个微不足道的开始。</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#Java 基础" title="Java 基础">Java 基础</a>
+              
+              <a class="tag" href="/tags/#多线程" title="多线程">多线程</a>
+              
+            </div>
+            <h1>线程池</h1>
+            <h2 class="subheading">我想规划任务组，如何做到呢？</h2>
+            <span class="meta">
+              Posted by Tommy Lam on
+              2021-11-14
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">4</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">1.2k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -426,413 +460,298 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-
-      <!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-0 col-md-10 col-md-offset-1">
-      <!-- 归档列表 -->
-
-      
-
-      <!-- 归档列表 -->
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2021">
-          <span class="tag-text">2021</span>
-        </span>
-        <ul>
-          
-          <li>
-            11-14
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Java/IO流/序列化/" style="color: #0085a1">
-              <span>
-                序列化
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            11-14
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Java/多线程/线程池/" style="color: #0085a1">
-              <span>
-                线程池
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            11-14
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Java/IO流/Filter 模式/" style="color: #0085a1">
-              <span>
-                Filter 模式
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            11-13
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Java/网络编程/TCP/" style="color: #0085a1">
-              <span>
-                TCP 网络交流
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            11-13
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Java/IO流/File 类/" style="color: #0085a1">
-              <span>
-                File 类
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            11-12
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Java/多线程/Wait() 与 Notify()/" style="color: #0085a1">
-              <span>
-                Wait与Notify
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            11-11
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Java/多线程/ReadwriteLock/" style="color: #0085a1">
-              <span>
-                ReadWriteLock
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            11-11
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Java/多线程/Condition/" style="color: #0085a1">
-              <span>
-                Condition
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            11-11
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Java/多线程/ReentrantLock/" style="color: #0085a1">
-              <span>
-                ReentrantLock
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            11-10
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Java/线程的问题/线程饥饿/" style="color: #0085a1">
-              <span>
-                线程饥饿
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2020">
-          <span class="tag-text">2020</span>
-        </span>
-        <ul>
-          
-          <li>
-            04-17
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Hexo-Theme-LiveMyLife/" style="color: #0085a1">
-              <span>
-                Hexo操作指南
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-      <!-- 如果开启评论功能 -->
-      
-    </div>
-
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Visitors -->
-<h5><a href="/">来访者</a></h5>
-
-<div class="widget">
-  <span>
-    Viewed <b><i><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Times
-  </span>
-  <br />
-  <span>
-    <b><i><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Visitors In Total
-  </span>
-</div>
-
-
-        <hr>
-    
-        <!-- Featured Tags -->
-
-<section>
-  <h5><a href="/tags/">特色标签</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/tags/#Java 基础" title="Java 基础" rel="10">Java 基础</a>
-    
-    
-    
-    <a href="/tags/#IO 流" title="IO 流" rel="3">IO 流</a>
-    
-    
-    
-    <a href="/tags/#多线程" title="多线程" rel="6">多线程</a>
-    
-    
-    
-    <a href="/tags/#网络编程" title="网络编程" rel="1">网络编程</a>
-    
-    
-    
-    <a href="/tags/#Hexo" title="Hexo" rel="1">Hexo</a>
-    
-    
-  </div>
-</section>
-
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <h5><a href="/about/">关于自己</a></h5>
-  <div class="short-about">
-
-    
-    <img id="avatar_pic" src="/img/avatar/I.jpg" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>知识的海洋中畅游，渐渐地...</p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
-
-      
-      <li>
-        <a target="_blank" href="https://github.com/Tommy Lam">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-      <li>
-        <a target="_blank" href="https://twitter.com/Tommy Lam">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-      <li>
-        <a target="_blank" href="https://www.instagram.com/Tommy Lam">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-      <li>
-        <a target="_blank" href="http://weibo.com/Tommy Lam">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-    </ul>
-  </div>
-</section>
-
-        <hr>
-    
-        <!-- RECENT POSTS -->
-
-<h5><a href="/">最近博文</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../../cn/Java/IO%E6%B5%81/%E5%BA%8F%E5%88%97%E5%8C%96/">
-      <li>序列化</li>
-    </a>
-    
-    <a href="../../cn/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E6%B1%A0/">
-      <li>线程池</li>
-    </a>
-    
-    <a href="../../cn/Java/IO%E6%B5%81/Filter%20%E6%A8%A1%E5%BC%8F/">
-      <li>Filter 模式</li>
-    </a>
-    
-    <a href="../../cn/Java/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/TCP/">
-      <li>TCP 网络交流</li>
-    </a>
-    
-    <a href="../../cn/Java/IO%E6%B5%81/File%20%E7%B1%BB/">
-      <li>File 类</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-        <!-- Friends Blog -->
-
-<h5><a href="/">链友</a></h5>
-<ul class="list-inline">
-  
-  <li><a href="https://v-vincen.life/" target="_blank">V_Vincen</a></li>
-  
+        <h4 id="简介">简介</h4>
+<p>Java语言虽然内置了多线程支持，启动一个新线程非常方便，但是，创建线程需要操作系统资源（线程资源，栈空间等），频繁创建和销毁大量线程需要消耗大量时间。</p>
+<p>如果可以复用一组线程：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">┌─────┐ execute  ┌──────────────────┐</span><br><span class="line">│Task1│─────────&gt;│ThreadPool        │</span><br><span class="line">├─────┤          │┌───────┐┌───────┐│</span><br><span class="line">│Task2│          ││Thread1││Thread2││</span><br><span class="line">├─────┤          │└───────┘└───────┘│</span><br><span class="line">│Task3│          │┌───────┐┌───────┐│</span><br><span class="line">├─────┤          ││Thread3││Thread4││</span><br><span class="line">│Task4│          │└───────┘└───────┘│</span><br><span class="line">├─────┤          └──────────────────┘</span><br><span class="line">│Task5│</span><br><span class="line">├─────┤</span><br><span class="line">│Task6│</span><br><span class="line">└─────┘</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
+<p>那么我们就可以把很多小任务让一组线程来执行，而不是一个任务对应一个新线程。这种能接收大量小任务并进行分发处理的就是线程池。</p>
+<p>简单地说，线程池内部维护了若干个线程，没有任务的时候，这些线程都处于等待状态。如果有新任务，就分配一个空闲线程执行。如果所有线程都处于忙碌状态，新任务要么放入队列等待，要么增加一个新线程进行处理。</p>
+<p>Java标准库提供了<code>ExecutorService</code>接口表示线程池，它的典型用法如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建固定大小的线程池:</span></span><br><span class="line">ExecutorService executor = Executors.newFixedThreadPool(<span class="number">3</span>);</span><br><span class="line"><span class="comment">// 提交任务:</span></span><br><span class="line">executor.submit(task1);</span><br><span class="line">executor.submit(task2);</span><br><span class="line">executor.submit(task3);</span><br><span class="line">executor.submit(task4);</span><br><span class="line">executor.submit(task5);</span><br></pre></td></tr></table></figure>
+<p>因为<code>ExecutorService</code>只是接口，Java标准库提供的几个常用实现类有：</p>
+<ul>
+<li>FixedThreadPool：线程数固定的线程池；</li>
+<li>CachedThreadPool：线程数根据任务动态调整的线程池；</li>
+<li>SingleThreadExecutor：仅单线程执行的线程池。</li>
 </ul>
+<h4 id="FixedThreadPool">FixedThreadPool</h4>
+<p>创建这些线程池的方法都被封装到<code>Executors</code>这个类中。我们以<code>FixedThreadPool</code>为例，看看线程池的执行逻辑</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.concurrent.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 创建一个固定大小的线程池:</span></span><br><span class="line">        ExecutorService es = Executors.newFixedThreadPool(<span class="number">4</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">6</span>; i++) &#123;</span><br><span class="line">            es.submit(<span class="keyword">new</span> Task(<span class="string">&quot;&quot;</span> + i));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 关闭线程池:</span></span><br><span class="line">        es.shutdown();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Task</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Task</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;start task &quot;</span> + name);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Thread.sleep(<span class="number">1000</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;end task &quot;</span> + name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 结果</span></span><br><span class="line">start task <span class="number">0</span>  </span><br><span class="line">start task <span class="number">1</span>  </span><br><span class="line">start task <span class="number">2</span>  </span><br><span class="line">start task <span class="number">3</span>  </span><br><span class="line">end task <span class="number">0</span>  </span><br><span class="line">end task <span class="number">1</span>  </span><br><span class="line">start task <span class="number">4</span>  </span><br><span class="line">start task <span class="number">5</span>  </span><br><span class="line">end task <span class="number">2</span>  </span><br><span class="line">end task <span class="number">3</span>  </span><br><span class="line">end task <span class="number">4</span>  </span><br><span class="line">end task <span class="number">5</span></span><br></pre></td></tr></table></figure>
+<p>根据结果看出，我们创建的线程池只有固定的4个线程，因此只有前四个任务会执行，等有空闲的线程时，后两个线程才会执行。</p>
+<p>我们调用<code>shutdown()</code>方法关闭线程池，他会等待正在执行的任务先完成再关闭，如果我们调用<code>shutdownNow()</code>，它就会立刻关闭线程池。<code>awaitTermination()</code>则是设定等待xx秒关闭线程池。</p>
+<h4 id="CachedThreadPool">CachedThreadPool</h4>
+<p>上述的<code>FixedThreadPool</code>限制了固定的数量，太过死板了，如果我们想限制一个可调控的范围，该如何做到呢？</p>
+<p>我们可以使用<code>CachedThreadPool</code>，根据其代码我们得知:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ExecutorService <span class="title">newCachedThreadPool</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ThreadPoolExecutor(<span class="number">0</span>, Integer.MAX_VALUE,</span><br><span class="line">                                    <span class="number">60L</span>, TimeUnit.SECONDS,</span><br><span class="line">                                    <span class="keyword">new</span> SynchronousQueue&lt;Runnable&gt;());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>因此，想创建指定动态范围的线程池，可以这么写：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> min = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">int</span> max = <span class="number">10</span>;</span><br><span class="line">ExecutorService es = <span class="keyword">new</span> ThreadPoolExecutor(min, max,</span><br><span class="line">        <span class="number">60L</span>, TimeUnit.SECONDS, <span class="keyword">new</span> SynchronousQueue&lt;Runnable&gt;());</span><br></pre></td></tr></table></figure>
+<h4 id="ScheduledThreadPool">ScheduledThreadPool</h4>
+<p>如果我们想设置任务定期重复执行该如何做到呢？ <code>ScheduledThreadPool</code>可以帮到你。</p>
+<p>我们想创建<code>ScheduledThreadPool</code>仍然是通过<code>Executors</code>类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ScheduledExecutorService ses = Executors.newScheduledThreadPool(<span class="number">4</span>);</span><br></pre></td></tr></table></figure>
+<p>我们可以提交一次性任务，它会在指定延迟后只执行一次：</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1秒后执行一次性任务:</span></span><br><span class="line">ses.<span class="built_in">schedule</span>(<span class="keyword">new</span> <span class="built_in"><span class="built_in">Task</span></span>(<span class="string">&quot;one-time&quot;</span>), <span class="number">1</span>, TimeUnit.SECONDS);</span><br></pre></td></tr></table></figure>
+<p>如果任务以固定的每3秒执行，我们可以这样写：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 2秒后开始执行定时任务，每3秒执行:</span></span><br><span class="line">ses.scheduleAtFixedRate(<span class="keyword">new</span> Task(<span class="string">&quot;fixed-rate&quot;</span>), <span class="number">2</span>, <span class="number">3</span>, TimeUnit.SECONDS);</span><br></pre></td></tr></table></figure>
+<p>如果任务以固定的3秒为间隔执行，我们可以这样写：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 2秒后开始执行定时任务，以3秒为间隔执行:</span></span><br><span class="line">ses.scheduleWithFixedDelay(<span class="keyword">new</span> Task(<span class="string">&quot;fixed-delay&quot;</span>), <span class="number">2</span>, <span class="number">3</span>, TimeUnit.SECONDS);</span><br></pre></td></tr></table></figure>
+<p>注意FixedRate和FixedDelay的区别。FixedRate是指任务总是以固定时间间隔触发，不管任务执行多长时间：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">│░░░░   │░░░░░░ │░░░    │░░░░░  │░░░  </span><br><span class="line">├───────┼───────┼───────┼───────┼────&gt;</span><br><span class="line">│&lt;─────&gt;│&lt;─────&gt;│&lt;─────&gt;│&lt;─────&gt;│</span><br></pre></td></tr></table></figure>
+<p>而FixedDelay是指，上一次任务执行完毕后，等待固定的时间间隔，再执行下一次任务：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">│░░░│       │░░░░░│       │░░│       │░</span><br><span class="line">└───┼───────┼─────┼───────┼──┼───────┼──&gt;</span><br><span class="line">    │&lt;─────&gt;│     │&lt;─────&gt;│  │&lt;─────&gt;│</span><br></pre></td></tr></table></figure>
+<p>因此，使用<code>ScheduledThreadPool</code>时，我们要根据需要选择执行一次、FixedRate执行还是FixedDelay执行。</p>
+<p>细心的童鞋还可以思考下面的问题：</p>
+<ul>
+<li>
+<p>在FixedRate模式下，假设每秒触发，如果某次任务执行时间超过1秒，后续任务会不会并发执行？</p>
+</li>
+<li>
+<p>如果任务抛出了异常，后续任务是否继续执行？</p>
+</li>
+</ul>
+<p>Java标准库还提供了一个<code>java.util.Timer</code>类，这个类也可以定期执行任务，但是，一个<code>Timer</code>会对应一个<code>Thread</code>，所以，一个<code>Timer</code>只能定期执行一个任务，多个定时任务必须启动多个<code>Timer</code>，而一个<code>ScheduledThreadPool</code>就可以调度多个定时任务，所以，我们完全可以用<code>ScheduledThreadPool</code>取代旧的<code>Timer</code>。</p>
 
 
         <hr>
-    
-        <!-- Archives -->
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/cn/Java/IO流/序列化/" data-toggle="tooltip" data-placement="top" title="序列化">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/cn/Java/IO流/Filter 模式/" data-toggle="tooltip" data-placement="top" title="Filter 模式">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
 
-<h5><a href="/archives/">archives</a></h5>
-<div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2021/11/">November 2021</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li></ul>
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      如果您喜欢此博客或发现它对您有用，则欢迎对此发表评论。 也欢迎您共享此博客，以便更多人可以参与。 如果博客中使用的图像侵犯了您的版权，请与作者联系以将其删除。 谢谢 ！
+    
+  </p>
 </div>
+<!-- tip end -->
 
+        <!-- tip end -->
+        
 
-        <hr>
-    
-        <!-- Categories -->
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
 
-<h5><a href="/categories/">categories</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="/categories/#Java 基础">
-      <li>Java 基础</li>
-    </a>
-    
-    <a href="/categories/#Hexo">
-      <li>Hexo</li>
-    </a>
-    
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=线程池&body=Hi,I found this website and thought you might like it https://notes.fishcode.org.cn/cn/Java/多线程/线程池/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
   </ul>
 </div>
 
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
 
+        <!-- Sharing End -->
+        
         <hr>
-    
-</div>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Sun Nov 14 2021 20:10:54 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
 
 
-    
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">特色标签</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#Java 基础" title="Java 基础">Java 基础</a>
+            
+            <a class="tag" href="/tags/#多线程" title="多线程">多线程</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>链友</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://v-vincen.life/" target="_blank">V_Vincen</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
   </div>
-</div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->
