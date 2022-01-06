@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://notes.fishcode.org.cn/cn/Frontend/ES6/1.%20ES6%20%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
+    <lastmod>2022-01-06</lastmod>
+  </url>
+  <url>
     <loc>https://notes.fishcode.org.cn/cn/Frontend/Nodejs/11.%20Controller/</loc>
     <lastmod>2022-01-05</lastmod>
   </url>
