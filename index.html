@@ -452,26 +452,24 @@
   <!-- top end -->
   
 
-  <a href="/cn/Frontend/Promise/4. Promise Async与Await/">
+  <a href="/cn/Frontend/Nodejs/11. Controller/">
     <h2 class="post-title">
-      4. Promise Async与Await
+      11. Controller
     </h2>
     <h3 class="post-subtitle">
-      关于Async与Await的使用说明
+      关于Express框架的路由匹配机制...
     </h3>
 	<!-- 
     <div class="post-content-preview">
-      Promise Async 与 Await
-Async 关键字
-Async关键字所包含的函数，返回的是一个Promise对象
-123456async function main()&#123;&#125;console.log(main())// 结果// Promise &#123;&lt;fulfilled&gt;: undefined&#125;
-可以留意到，空函数返回的Promise......
+      Controller
+在[[1. Nodejs介绍]]中，我们曾列出了Express项目的目录结构，其中有个文件夹叫做Controller，现在我们将说明这个文件夹所含文件的用途
+先前我们在[[8. Express框架]]中提到的路由独立中，我们曾经main.js的路由配置放入了router-&gt;router.js文件中，这使得维护代码更加方便，代码结构更加清晰。但实际上，当我们查看ro......
     </div> -->
   </a>
   
   <p class="post-meta" style="margin: 10px 0;">
     Posted by Tommy Lam on
-    2022-01-03
+    2022-01-05
   </p>
   <div class="tags">
     
@@ -481,6 +479,10 @@ Async关键字所包含的函数，返回的是一个Promise对象
     
     <a href="/tags/#ES6" title="ES6">ES6</a>
     
+    <a href="/tags/#Nodejs" title="Nodejs">Nodejs</a>
+    
+    <a href="/tags/#Express" title="Express">Express</a>
+    
   </div>
   
 
@@ -494,23 +496,71 @@ Async关键字所包含的函数，返回的是一个Promise对象
   <!-- top end -->
   
 
-  <a href="/cn/Frontend/Promise/3. Promise自定义/">
+  <a href="/cn/Frontend/Nodejs/10. RESTful 接口规范/">
     <h2 class="post-title">
-      3. Promise自定义
+      10. RESTful 接口规范
     </h2>
     <h3 class="post-subtitle">
-      手撕Promise源码，自己实现自己的Promise
+      详解RESTful接口规范...
     </h3>
 	<!-- 
     <div class="post-content-preview">
-      自定义Promise
-1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586/*    @Author: Tommy La......
+      RESTful 接口规范
+协议
+API 与 用户 的通信协议，尽量使用 HTTPs 协议
+域名
+应该尽量将API部署在专用域名下
+1https://api.example.com
+如果确定API很简单不会有进一步扩展，可以考虑放在主域名下。
+1https://example.org/api/
+版本
+应该将API的版本号放入URL
+1https://api.example.com/v1/
+路径......
     </div> -->
   </a>
   
   <p class="post-meta" style="margin: 10px 0;">
     Posted by Tommy Lam on
-    2022-01-03
+    2022-01-05
+  </p>
+  <div class="tags">
+    
+    <a href="/tags/#RESTful 接口规范" title="RESTful 接口规范">RESTful 接口规范</a>
+    
+  </div>
+  
+
+</div>
+<hr>
+
+<div class="post-preview">
+  
+  <!-- top start (article top hot config) -->
+  
+  <!-- top end -->
+  
+
+  <a href="/cn/Frontend/Nodejs/9. Express 路由路径匹配机制/">
+    <h2 class="post-title">
+      9. Express 路由路径匹配机制
+    </h2>
+    <h3 class="post-subtitle">
+      关于Express框架的路由匹配机制...
+    </h3>
+	<!-- 
+    <div class="post-content-preview">
+      Express 路由路径匹配机制
+基本
+123router.get(&#x27;/&#x27;,(req, res)=&gt;&#123;	res.send(&quot;匹配成功&quot;);&#125;)
+字符串符 ?
+1234// acd 或 abcd 匹配成功router.get(&#x27;/ab?cd&#x27;,(req, res)=&gt;&#123;	res.send(&q......
+    </div> -->
+  </a>
+  
+  <p class="post-meta" style="margin: 10px 0;">
+    Posted by Tommy Lam on
+    2022-01-05
   </p>
   <div class="tags">
     
@@ -520,6 +570,10 @@ Async关键字所包含的函数，返回的是一个Promise对象
     
     <a href="/tags/#ES6" title="ES6">ES6</a>
     
+    <a href="/tags/#Nodejs" title="Nodejs">Nodejs</a>
+    
+    <a href="/tags/#Express" title="Express">Express</a>
+    
   </div>
   
 
@@ -533,31 +587,25 @@ Async关键字所包含的函数，返回的是一个Promise对象
   <!-- top end -->
   
 
-  <a href="/cn/Frontend/Promise/2. Promise状态/">
+  <a href="/cn/Frontend/Nodejs/8. Express框架/">
     <h2 class="post-title">
-      2. Promise状态
+      8. Express框架
     </h2>
     <h3 class="post-subtitle">
-      Promise状态、执行流程、静态方法、链式调用...
+      Nodejs中最流行的WEB服务器框架...
     </h3>
 	<!-- 
     <div class="post-content-preview">
-      Promise状态
-实例对象中的属性[PromiseState]
-
-pending -&gt; resolved / fulfilled
-pending -&gt; rejected
-
-只有以上两种，且一个Promise对象只能改变一次。
-无论成功或失败，都会有一个结果数据，成功的数据被称为value，失败的被称为reason
-PromiseResult
-Promise实例对象的属性之一，保......
+      Express框架
+在[[7. HTTP模块]]中我们曾用到过http模块简单地搭建了一个web服务器，但其实这个模块并不适合我们快速搭建可用的web服务器，像是安全性、跨域等问题并没有为我们考虑进去，如果我们想处理这类问题还需要我们一行行地敲代码实现。
+但Express模块相比于http更进一步封装，将一些我们未曾考虑到的问题像是静态资源、路由封装都替我们解决了。
+但要留意的是，Expre......
     </div> -->
   </a>
   
   <p class="post-meta" style="margin: 10px 0;">
     Posted by Tommy Lam on
-    2022-01-02
+    2022-01-05
   </p>
   <div class="tags">
     
@@ -567,6 +615,10 @@ Promise实例对象的属性之一，保......
     
     <a href="/tags/#ES6" title="ES6">ES6</a>
     
+    <a href="/tags/#Nodejs" title="Nodejs">Nodejs</a>
+    
+    <a href="/tags/#Express" title="Express">Express</a>
+    
   </div>
   
 
@@ -580,34 +632,31 @@ Promise实例对象的属性之一，保......
   <!-- top end -->
   
 
-  <a href="/cn/Frontend/Promise/1. Promise介绍/">
+  <a href="/cn/Frontend/Nodejs/7. HTTP模块/">
     <h2 class="post-title">
-      1. Promise介绍
+      7. HTTP模块
     </h2>
     <h3 class="post-subtitle">
-      简单地介绍一些Promise相关的内容
+      Nodejs提供的基础WEB服务器模块...
     </h3>
 	<!-- 
     <div class="post-content-preview">
-      Promise
-常见于异步编程:
+      HTTP模块
+由Nodejs提供的一个内置模块，用来简单地搭建web服务器，通过HTTP模块提供的http.createServer()就能创建一台服务器。
+创建步骤:
 
-fs 文件操作
-数据库操作
-AJAX
-定时器
+导入http模块
+const server = http.createServer()创建服务器
+server.on()处理访问请求
+server.listen()开启端口监听
 
-Promise是一种新的技术（ES6），他作为新的异步解决方案，解决了地狱回调的问题。
-从语法上，Promise是构造函数，从功能上说，Promise对象用于封装一个异步操作，并可以获取其成功或失败的结果
-为什么要使用Promise
-ES6前，指定回调函数必须在启动异步任务前指定
-Promise: 启动异步任......
+以上四步是最基本的步骤，如果你想回答客户端......
     </div> -->
   </a>
   
   <p class="post-meta" style="margin: 10px 0;">
     Posted by Tommy Lam on
-    2022-01-02
+    2022-01-05
   </p>
   <div class="tags">
     
@@ -617,44 +666,7 @@ Promise: 启动异步任......
     
     <a href="/tags/#ES6" title="ES6">ES6</a>
     
-  </div>
-  
-
-</div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/cn/Java/IO流/序列化/">
-    <h2 class="post-title">
-      序列化
-    </h2>
-    <h3 class="post-subtitle">
-      如何将实例传给其他人呢？
-    </h3>
-	<!-- 
-    <div class="post-content-preview">
-      简介
-序列化是指把一个Java对象转变为二进制内容，这种操作能够很方便地将某些Java对象远程传输到远端进行使用。序列化后的内容会转变为byte[]进行保存，远端可以通过反序列化将byte[]重新转变为Java对象。
-一个Java对象要能序列化，必须实现一个特殊的java.io.Serializable接口，它的定义如下：
-12public interface Serializable &#......
-    </div> -->
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by Tommy Lam on
-    2021-11-14
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#Java 基础" title="Java 基础">Java 基础</a>
-    
-    <a href="/tags/#IO 流" title="IO 流">IO 流</a>
+    <a href="/tags/#Nodejs" title="Nodejs">Nodejs</a>
     
   </div>
   
@@ -669,31 +681,37 @@ Promise: 启动异步任......
   <!-- top end -->
   
 
-  <a href="/cn/Java/多线程/线程池/">
+  <a href="/cn/Frontend/Nodejs/6. 同步与异步/">
     <h2 class="post-title">
-      线程池
+      6. 同步与异步
     </h2>
     <h3 class="post-subtitle">
-      我想规划任务组，如何做到呢？
+      了解编程中同步与异步的差异和影响...
     </h3>
 	<!-- 
     <div class="post-content-preview">
-      简介
-Java语言虽然内置了多线程支持，启动一个新线程非常方便，但是，创建线程需要操作系统资源（线程资源，栈空间等），频繁创建和销毁大量线程需要消耗大量时间。
-如果可以复用一组线程：
-1234567891011121314┌─────┐ execute  ┌──────────────────┐│Task1│─────────&gt;│ThreadPool        │├─────┤  ......
+      同步与异步
+在Nodejs中，有提供文件IO操作的模块，叫做fs，通常这类模块的多数方法都会自带两种模式，分别是同步和异步。
+同步会阻塞程序的执行，直到其完成任务，否则不会向下执行代码。
+异步则恰恰相反，它不会阻塞程序的运行，而是在操作完成时，通过回调函数将结果返回。
+JavaScript是单线程的?
+JS运行在浏览器中，是单线程的，每个window一个JS线程，既然是单线程的，在某个特定的......
     </div> -->
   </a>
   
   <p class="post-meta" style="margin: 10px 0;">
     Posted by Tommy Lam on
-    2021-11-14
+    2022-01-05
   </p>
   <div class="tags">
     
-    <a href="/tags/#Java 基础" title="Java 基础">Java 基础</a>
+    <a href="/tags/#前端开发" title="前端开发">前端开发</a>
     
-    <a href="/tags/#多线程" title="多线程">多线程</a>
+    <a href="/tags/#JavaScript" title="JavaScript">JavaScript</a>
+    
+    <a href="/tags/#ES6" title="ES6">ES6</a>
+    
+    <a href="/tags/#Nodejs" title="Nodejs">Nodejs</a>
     
   </div>
   
@@ -708,30 +726,39 @@ Java语言虽然内置了多线程支持，启动一个新线程非常方便，�
   <!-- top end -->
   
 
-  <a href="/cn/Java/IO流/Filter 模式/">
+  <a href="/cn/Frontend/Nodejs/5. Buffer缓冲区/">
     <h2 class="post-title">
-      Filter 模式
+      5. Buffer缓冲区
     </h2>
     <h3 class="post-subtitle">
-      如何为IO添加额外附加功能呢
+      关于Nodejs中的Buffer缓冲区相关内容...
     </h3>
 	<!-- 
     <div class="post-content-preview">
-      简介
-在Java中，我们如果需要执行IO流操作就需要依赖InputStream和OutputStream。我们常用FileInputStream从文件中读取数据，我们也使用ServletInputStream从HTTP请求中获取数据，如果我们想从TCP连接中获取数据，也能使用Socket.getInputStream()获取对应数据。
-但此时我们可能有需求，我们想为上述的InputStrea......
+      Buffer缓冲区
+
+Buffer的结构与数组很像，操作方法也相似
+数组中不能存储二进制的文件，而buffer就是专门用来存储二进制数据的
+Buffer不需要引入模块，可以直接使用
+Buffer中每一个元素的范围是从 00 ~ ff (十六进制)，一个字节代表一个字母和符号，三个字节代表一个汉字
+
+1234let str = &quot;Hello world&quot;;  let buf......
     </div> -->
   </a>
   
   <p class="post-meta" style="margin: 10px 0;">
     Posted by Tommy Lam on
-    2021-11-14
+    2022-01-05
   </p>
   <div class="tags">
     
-    <a href="/tags/#Java 基础" title="Java 基础">Java 基础</a>
+    <a href="/tags/#前端开发" title="前端开发">前端开发</a>
     
-    <a href="/tags/#IO 流" title="IO 流">IO 流</a>
+    <a href="/tags/#JavaScript" title="JavaScript">JavaScript</a>
+    
+    <a href="/tags/#ES6" title="ES6">ES6</a>
+    
+    <a href="/tags/#Nodejs" title="Nodejs">Nodejs</a>
     
   </div>
   
@@ -746,30 +773,43 @@ Java语言虽然内置了多线程支持，启动一个新线程非常方便，�
   <!-- top end -->
   
 
-  <a href="/cn/Java/网络编程/TCP/">
+  <a href="/cn/Frontend/Nodejs/4. 模块化简介/">
     <h2 class="post-title">
-      TCP 网络交流
+      4. 模块化简介
     </h2>
     <h3 class="post-subtitle">
-      简单说明在Java中，如何实现TCP连接
+      补充ES6的模块化思想知识点...
     </h3>
 	<!-- 
     <div class="post-content-preview">
-      简介
-在开发网络应用程序的时候，我们又会遇到Socket这个概念。Socket是一个抽象概念，一个应用程序通过一个Socket来建立一个远程连接，而Socket内部通过TCP/IP协议把数据传输到网络：
-123456789┌───────────┐                                   ┌───────────┐│Application│            ......
+      模块化简介
+早年的ECMAScript标准存在许多缺陷
+
+没有模块化系统
+标准库少
+没有标准接口
+缺乏管理系统
+
+此外，早年的JavaScript仅可运行在浏览器上。
+模块化
+如果程序设计打到一定规模则必须进行模块化，模块化思维中，每个js文件都是一个模块，在以往设计程序时，往往会发生功能重复的问题，为提高代码复用率，模块诞生了。
+开发人员默契地将各个功能分为不同的模块，常见的模块化规范有C......
     </div> -->
   </a>
   
   <p class="post-meta" style="margin: 10px 0;">
     Posted by Tommy Lam on
-    2021-11-13
+    2022-01-05
   </p>
   <div class="tags">
     
-    <a href="/tags/#Java 基础" title="Java 基础">Java 基础</a>
+    <a href="/tags/#前端开发" title="前端开发">前端开发</a>
     
-    <a href="/tags/#网络编程" title="网络编程">网络编程</a>
+    <a href="/tags/#JavaScript" title="JavaScript">JavaScript</a>
+    
+    <a href="/tags/#ES6" title="ES6">ES6</a>
+    
+    <a href="/tags/#Nodejs" title="Nodejs">Nodejs</a>
     
   </div>
   
@@ -784,35 +824,33 @@ Java语言虽然内置了多线程支持，启动一个新线程非常方便，�
   <!-- top end -->
   
 
-  <a href="/cn/Java/IO流/File 类/">
+  <a href="/cn/Frontend/Nodejs/3. 进程与线程/">
     <h2 class="post-title">
-      File 类
+      3. 进程与线程
     </h2>
     <h3 class="post-subtitle">
-      关于File 类的文章
+      线程与进程的知识点补充...
     </h3>
 	<!-- 
     <div class="post-content-preview">
-      简介
-文件是计算机系统中非常重要的存储方式。Java提供了File对象供开发人员进行文件相关的操作
-构建File对象时，需要在构造参数处传入文件的路径，如:
-1File f = new File(&quot;C:\\Windows\\notepad.exe&quot;);
-注意
-在Windows系统中，我们采用\作为路径分隔符。
-在Linux系统中，我们采用/作为路径分隔符。
-.用于表示当前......
+      进程与线程
+进程负责为程序的运行提供必备的环境
+当我们敲完一份代码并存储到硬盘中后，他并不会自动执行。
+当我们要执行他时，CPU从硬盘中读取程序文件到内存，这个在内存中的可执行程序实例就被称为进程
+一个程序，若多次被读入内存中，则变成多个独立的进程，硬盘中多个程序被读入内存中时，也就意味着创建了更多的进程。
+内存中任何地方都有相应的地址方便访问，而在内存中的每个进程，自己内部都有一个虚拟独立......
     </div> -->
   </a>
   
   <p class="post-meta" style="margin: 10px 0;">
     Posted by Tommy Lam on
-    2021-11-13
+    2022-01-05
   </p>
   <div class="tags">
     
-    <a href="/tags/#Java 基础" title="Java 基础">Java 基础</a>
+    <a href="/tags/#Nodejs" title="Nodejs">Nodejs</a>
     
-    <a href="/tags/#IO 流" title="IO 流">IO 流</a>
+    <a href="/tags/#计算机基础" title="计算机基础">计算机基础</a>
     
   </div>
   
@@ -827,30 +865,48 @@ Java语言虽然内置了多线程支持，启动一个新线程非常方便，�
   <!-- top end -->
   
 
-  <a href="/cn/Java/多线程/Wait() 与 Notify()/">
+  <a href="/cn/Frontend/Nodejs/2. CMD小黑窗/">
     <h2 class="post-title">
-      Wait与Notify
+      2. CMD小黑窗
     </h2>
     <h3 class="post-subtitle">
-      更加自由地控制线程...
+      简单介绍控制台的基本指令和路径相关的知识...
     </h3>
 	<!-- 
     <div class="post-content-preview">
-      简介
-Wait()与Notify()常出现在多线程编程中，当线程想保留资源且希望线程能够随时重获资源时，就需要使用这两个函数。
-12345678910111213class TaskQueue &#123;    Queue&lt;String&gt; queue = new LinkedList&lt;&gt;();    public synchronized void addTask(......
+      CMD小黑窗
+由于Nodejs经常要与cmd命令窗口进行交互，因此我们需要了解一些基本的命令
+
+
+常用指令:
+
+dir —— 列出当前目录下所有文件
+cd &lt;路径&gt; —— 进入到指定的路径
+md &lt;目录名&gt; —— 创建一个文件夹
+rd &lt;目录名&gt; —— 删除一个文件夹
+
+
+
+目录
+
+. 表示当前目录
+… 表示上一级目录
+
+
+
+环境变量（windows系统变......
     </div> -->
   </a>
   
   <p class="post-meta" style="margin: 10px 0;">
     Posted by Tommy Lam on
-    2021-11-12
+    2022-01-05
   </p>
   <div class="tags">
     
-    <a href="/tags/#Java 基础" title="Java 基础">Java 基础</a>
+    <a href="/tags/#Nodejs" title="Nodejs">Nodejs</a>
     
-    <a href="/tags/#多线程" title="多线程">多线程</a>
+    <a href="/tags/#计算机基础" title="计算机基础">计算机基础</a>
     
   </div>
   
@@ -926,15 +982,31 @@ Wait()与Notify()常出现在多线程编程中，当线程想保留资源且希
     
     
     
-    <a href="/tags/#前端开发" title="前端开发" rel="4">前端开发</a>
+    <a href="/tags/#前端开发" title="前端开发" rel="13">前端开发</a>
     
     
     
-    <a href="/tags/#JavaScript" title="JavaScript" rel="4">JavaScript</a>
+    <a href="/tags/#JavaScript" title="JavaScript" rel="13">JavaScript</a>
     
     
     
-    <a href="/tags/#ES6" title="ES6" rel="4">ES6</a>
+    <a href="/tags/#ES6" title="ES6" rel="13">ES6</a>
+    
+    
+    
+    <a href="/tags/#Nodejs" title="Nodejs" rel="10">Nodejs</a>
+    
+    
+    
+    <a href="/tags/#RESTful 接口规范" title="RESTful 接口规范" rel="1">RESTful 接口规范</a>
+    
+    
+    
+    <a href="/tags/#Express" title="Express" rel="3">Express</a>
+    
+    
+    
+    <a href="/tags/#计算机基础" title="计算机基础" rel="2">计算机基础</a>
     
     
   </div>
@@ -1024,24 +1096,24 @@ Wait()与Notify()常出现在多线程编程中，当线程想保留资源且希
 <div class="widget">
   <ul>
     
-    <a href="cn/Frontend/Promise/4.%20Promise%20Async%E4%B8%8EAwait/">
-      <li>4. Promise Async与Await</li>
+    <a href="cn/Frontend/Nodejs/11.%20Controller/">
+      <li>11. Controller</li>
     </a>
     
-    <a href="cn/Frontend/Promise/3.%20Promise%E8%87%AA%E5%AE%9A%E4%B9%89/">
-      <li>3. Promise自定义</li>
+    <a href="cn/Frontend/Nodejs/10.%20RESTful%20%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83/">
+      <li>10. RESTful 接口规范</li>
     </a>
     
-    <a href="cn/Frontend/Promise/2.%20Promise%E7%8A%B6%E6%80%81/">
-      <li>2. Promise状态</li>
+    <a href="cn/Frontend/Nodejs/9.%20Express%20%E8%B7%AF%E7%94%B1%E8%B7%AF%E5%BE%84%E5%8C%B9%E9%85%8D%E6%9C%BA%E5%88%B6/">
+      <li>9. Express 路由路径匹配机制</li>
     </a>
     
-    <a href="cn/Frontend/Promise/1.%20Promise%E4%BB%8B%E7%BB%8D/">
-      <li>1. Promise介绍</li>
+    <a href="cn/Frontend/Nodejs/8.%20Express%E6%A1%86%E6%9E%B6/">
+      <li>8. Express框架</li>
     </a>
     
-    <a href="cn/Java/IO%E6%B5%81/%E5%BA%8F%E5%88%97%E5%8C%96/">
-      <li>序列化</li>
+    <a href="cn/Frontend/Nodejs/7.%20HTTP%E6%A8%A1%E5%9D%97/">
+      <li>7. HTTP模块</li>
     </a>
     
   </ul>
@@ -1066,7 +1138,7 @@ Wait()与Notify()常出现在多线程编程中，当线程想保留资源且希
 
 <h5><a href="/archives/">archives</a></h5>
 <div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2022/01/">January 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2021/11/">November 2021</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li></ul>
+  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2022/01/">January 2022</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2021/11/">November 2021</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li></ul>
 </div>
 
 
@@ -1096,6 +1168,26 @@ Wait()与Notify()常出现在多线程编程中，当线程想保留资源且希
     
     <a href="/categories/#ES6">
       <li>ES6</li>
+    </a>
+    
+    <a href="/categories/#Nodejs">
+      <li>Nodejs</li>
+    </a>
+    
+    <a href="/categories/#RESTful 接口规范">
+      <li>RESTful 接口规范</li>
+    </a>
+    
+    <a href="/categories/#Nodejs">
+      <li>Nodejs</li>
+    </a>
+    
+    <a href="/categories/#Express">
+      <li>Express</li>
+    </a>
+    
+    <a href="/categories/#计算机基础">
+      <li>计算机基础</li>
     </a>
     
   </ul>
